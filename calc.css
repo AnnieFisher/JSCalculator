@@ -7,4 +7,14 @@ th, td {
    height: 30px;
    width: 30px;
    text-align: center;
-   background: #F0F8FF;
+   background: #769cbe;
+}
+#clear {
+     color: red;
+   }
+#equals {
+  color: rgb(35, 224, 54);
+}
+#result{
+  background-color: rgb(204, 164, 20)
+}
