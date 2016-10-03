@@ -134,78 +134,80 @@ decimal.addEventListener('click', function(e){
     result.textContent += '.';
   }
   notFirst = true;
-})
-
+});
+negative.addEventListener('click', function(e){
+  result.textContent = result.textContent * -1;
+});
 zero.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '0';
   notFirst = true;
-})
+});
 one.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '1';
   notFirst = true;
-})
+});
 two.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '2';
   notFirst = true;
-})
+});
 three.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '3';
   notFirst= true;
-})
+});
 four.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '4';
   notFirst = true;
-})
+});
 five.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '5';
   notFirst = true;
-})
+});
 six.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '6';
   notFirst = true;
-})
+});
 seven.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '7';
   notFirst = true;
-})
+});
 eight.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '8';
   notFirst= true;
-})
+});
 nine.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '9';
   notFirst= true;
-})
+});
 
 var calculate = function(current, keepVal , last){
 
@@ -226,9 +228,9 @@ var calculate = function(current, keepVal , last){
       break;
     default:
       break;
-  }
+  };
   return result.textContent;
-}
+};
 
 
 
@@ -236,23 +238,22 @@ addition.addEventListener('click', function(e){
   keepNum  = calculate(result.textContent, keepNum , last);
   last = 'addition'
   notFirst = false;
-})
+});
 subtract.addEventListener('click', function(e){
   keepNum  = calculate(result.textContent,keepNum , last);
   last= 'subtract'
   notFirst = false;
-})
+});
 multiply.addEventListener('click', function(e){
   keepNum  = calculate(result.textContent,keepNum , last);
   last = 'multiply'
   notFirst= false;
-})
+});
 divide.addEventListener('click', function(e){
   keepNum  = calculate(result.textContent, keepNum , last);
   last = 'divide'
   notFirst = false;
-})
-
+});
 equals.addEventListener('click', function(e){
   keepNum  = calculate(result.textContent, keepNum , last);
   last = 'equals'
