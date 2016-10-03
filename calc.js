@@ -138,6 +138,9 @@ decimal.addEventListener('click', function(e){
 negative.addEventListener('click', function(e){
   result.textContent = result.textContent * -1;
 });
+modulus.addEventListener('click', function(e){
+  result.textContent = result.textContent / 100;
+});
 zero.addEventListener('click', function(e){
   if (!notFirst) {
     result.textContent = '';
@@ -254,11 +257,12 @@ divide.addEventListener('click', function(e){
   last = 'divide'
   notFirst = false;
 });
+
 equals.addEventListener('click', function(e){
   keepNum  = calculate(result.textContent, keepNum , last);
   last = 'equals'
   notFirst = false;
-})
+});
 
 clear.addEventListener('click', function(e){
   keepNum  = 0;
