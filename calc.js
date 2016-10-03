@@ -172,7 +172,7 @@ four.addEventListener('click', function(e){
   notFirst = true;
 })
 five.addEventListener('click', function(e){
-  if (notFirst) {
+  if (!notFirst) {
     result.textContent = '';
   }
   result.textContent += '5';
